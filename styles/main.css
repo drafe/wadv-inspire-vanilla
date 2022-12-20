@@ -1,0 +1,28 @@
+main{
+    display: flex;
+}
+.postContainer{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.post{
+    border-radius: 1em;
+    padding: 1em;
+
+    /*text-align: center;*/
+    /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+}
+
+.buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    margin: 1em;
+    background: #84fab0;
+    border: #84fab0;
+    border-radius: 0.3em;
+}
