@@ -10,6 +10,7 @@ let quotes;
 let i_q=0;
 
 function setup(){
+    console.log("hi")
     create_svg('postContainer');
     const button = document.getElementById('next_but');
     button.onclick = nextQuote;
@@ -41,10 +42,12 @@ function create_svg(container ){
     rect.setAttribute("width", `${w}`);
 }
 function nextQuote(){
+    console.log("but click")
     const count = palette.length;
     const [f,s] = [Math.floor(Math.random() * count/2), Math.floor(Math.random() * count/2 + count/2)]
     draw(quotes[i_q], [palette[f], palette[s]]);
     i_q+=1;
+
 }
 
 // todo text wraping
